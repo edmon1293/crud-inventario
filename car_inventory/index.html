@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido al inventario de Autos</title>
+  <style>
+     body {
+      background-image: url('C:\xampp1\htdocs\car_inventory\cuervos.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      color: #ddd; 
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #333; 
+      color: #ddd; 
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #fff; 
+    }
+
+    form, table {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, button {
+      margin-bottom: 10px;
+    }
+
+    input, button {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd; 
+      text-align: left;
+    }
+
+    th {
+      background-color: #444; 
+      color: #fff; 
+    }
+
+    td {
+      background-color: #555; 
+    }
+
+    .editButton, .deleteButton {
+      padding: 5px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .editButton {
+      background-color: #4CAF50; 
+      color: #fff;
+    }
+
+    .deleteButton {
+      background-color: #f44336; 
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <h2>Bienvenido al inventario de autos utvetiano</h2>
+
+  <form id="carForm">
+    <label for="carMake">Marca:</label>
+    <input type="text" id="carMake" required>
+    
+    <label for="carModel">Modelo:</label>
+    <input type="text" id="carModel" required>
+
+    <label for="carYear">Año:</label>
+    <input type="number" id="carYear" required>
+
+    <button id="addCarButton">Agregar Auto</button>
+  </form>
+
+  <table id="carTable">
+    <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Año</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
